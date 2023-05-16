@@ -40,8 +40,8 @@ public class counting_sort {
         }
         for (int j = 0; j < array.length; j++) {
                 int tmp=array[j];
-                int temp=index[tmp];
-                output[temp-1]=tmp;
+                int dimension=index[tmp];
+                output[dimension-1]=tmp;
                 index[tmp]--;
         }
         }
