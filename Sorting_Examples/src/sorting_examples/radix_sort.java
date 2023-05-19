@@ -30,6 +30,26 @@ public class radix_sort {
             System.out.println(array[i]);
         }
     }
+    public static void find_n(int array[],int max)
+    {
+        int counter = 0;
+        for (int j = 0; j < array.length; j++)
+        {
+            for (int i = 0; i < 10; i++) 
+            {
+            int temp =  (int) ((int)array[i]/Math.pow(10,i));
+            if(temp!=0)
+            {
+                counter++;
+            }
+            }
+        }
+        
+        if(counter>max)
+        {
+            max = counter;
+        }
+    }
     public static int radixsort(int array[],int n,int array_length)
     {
         int length = array.length-1;
@@ -55,26 +75,7 @@ public class radix_sort {
             }
         return radixsort(array,n-1,array_length);
     }
-    public static void find_n(int array[],int max)
-    {
-        int counter = 0;
-        for (int j = 0; j < array.length; j++)
-        {
-            for (int i = 0; i < 10; i++) 
-            {
-            int temp =  (int) ((int)array[i]/Math.pow(10,i));
-            if(temp!=0)
-            {
-                counter++;
-            }
-            }
-        }
-        
-        if(counter>max)
-        {
-            max = counter;
-        }
-    }
+    
 
    
 }
