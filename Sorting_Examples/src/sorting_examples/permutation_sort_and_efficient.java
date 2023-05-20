@@ -18,14 +18,17 @@ public class permutation_sort_and_efficient {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        int arr[]=new int[3];
+        long startTime = System.currentTimeMillis();
+        int arr[]=new int[10000];
         Random r = new Random();
         for (int i = 0; i < arr.length; i++) {
-            arr[i]=r.nextInt(5);
+            arr[i]=r.nextInt(100000);
         }
         p_sort(arr);
         System.out.println("Sorted Array");
-        print(arr);
+        //print(arr);
+        long finishTime = System.currentTimeMillis();
+        System.out.println("\nClock time :"+(finishTime-startTime));
         
     }
     public static void p_sort(int arr[])

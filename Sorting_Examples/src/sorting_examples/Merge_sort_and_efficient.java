@@ -26,7 +26,7 @@ public class Merge_sort_and_efficient {
                 }
             }
         }
-        if(low==high || low+1==high)
+        if(low+1==high)
         {
             return 0;
         }

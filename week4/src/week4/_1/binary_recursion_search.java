@@ -31,20 +31,20 @@ public class binary_recursion_search {
             int mid = (high+low)/2;
             if(arr[mid]==n)
             {
-            return mid;
+            return mid  ;
             }
             else if(arr[mid]>n)
             {
-            return binary_search(arr,mid+1,high,n);
+            return binary_search(arr,mid+1,high,n)  ;
 
             }
             else if(arr[mid]<n)
             {
-            return binary_search(arr,low,mid-1,n);
+            return binary_search(arr,low,mid-1,n) ;
             }
         }
             
-        return -1;
+        return 0;
         
     }
     
