@@ -10,7 +10,7 @@ public class bogo_sort_and_efficient {
         // TODO code application logic here
         long startTime = System.currentTimeMillis();
         Scanner input = new Scanner(System.in);
-        int arr[]=new int[1000000];
+        int arr[]=new int[1000];
         
         long finishTime = System.currentTimeMillis();
         System.out.println("Clock time :"+(finishTime-startTime));
@@ -20,7 +20,7 @@ public class bogo_sort_and_efficient {
         
         Random r = new Random();
         for (int i = 0; i < arr.length; i++) {
-            arr[i]=r.nextInt(1000000);
+            arr[i]=r.nextInt(1000);
         }
         for (int i = 0; i < arr.length-1; i++)
         {

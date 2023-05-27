@@ -29,9 +29,6 @@ public class Stooge_Sort {
         }
         
         stoogesort(array,0,array.length);
-        for (int i = 0; i < array.length; i++) {
-            System.out.println(array[i]);
-        }
        long finishTime = System.currentTimeMillis();
        System.out.println("Clock time :"+(finishTime-startTime));
     }
