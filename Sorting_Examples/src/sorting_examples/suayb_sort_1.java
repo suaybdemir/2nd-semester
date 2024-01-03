@@ -19,9 +19,9 @@ public class suayb_sort_1 {
     public static void main(String[] args)
     {
         long startTime = System.currentTimeMillis();
-        int arr[]=new int[1000];
+        int arr[]=new int[10000];
         Random r = new Random();
-        for (int i = 0; i < 1000; i++) {
+        for (int i = 0; i < arr.length; i++) {
             arr[i]=r.nextInt(1000);
         }
         exchange(arr,arr.length);
